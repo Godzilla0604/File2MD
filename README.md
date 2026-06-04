@@ -6,6 +6,7 @@
 
 [![Manifest V3](https://img.shields.io/badge/Manifest-V3-blueviolet?style=flat-square)](https://developer.chrome.com/docs/extensions/mv3/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
+[![GitHub](https://img.shields.io/badge/GitHub-Godzilla0604%2FFile2MD-181717?style=flat-square&logo=github)](https://github.com/Godzilla0604/File2MD)
 [![No Backend](https://img.shields.io/badge/Backend-None-orange?style=flat-square)](#privacy)
 [![Zero Dependencies](https://img.shields.io/badge/Dependencies-Zero-red?style=flat-square)](#tech-stack)
 
@@ -57,7 +58,7 @@ It is aimed at developers, writers, and students who need a fast, private way to
 
 ### Load Unpacked (Developer Mode)
 
-1. [Download or clone this repository](https://github.com/your-username/File2MD) to your local machine.
+1. [Download or clone this repository](https://github.com/Godzilla0604/File2MD) to your local machine.
 2. Open **Google Chrome** and go to `chrome://extensions/`.
 3. Toggle **Developer Mode** on (switch in the top-right corner).
 4. Click **"Load unpacked"**.
@@ -224,7 +225,7 @@ Contributions are welcome! Please:
 
 ## 📄 License
 
-[MIT License](LICENSE) — free to use, modify, and distribute.
+[MIT License](LICENSE) — Copyright © 2026 [Rishil Chudasama](https://github.com/Godzilla0604). Free to use, modify, and distribute.
 
 ---
 
