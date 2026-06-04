@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>File2MD</title>
+  <meta name="description" content="File2MD — Convert .txt, .py, .js, .html, .css, .json, .csv files to Markdown. 100% locally, nothing uploaded." />
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+
+<div class="popup-wrapper">
+
+  <!-- ── Header ── -->
+  <header class="header">
+    <div class="logo" aria-hidden="true">⬇</div>
+    <div class="header-text">
+      <h1>File2MD</h1>
+      <p>File → Markdown, instantly &amp; locally</p>
+    </div>
+    <span class="version-badge" aria-label="Version 1.0">v1.0</span>
+  </header>
+
+  <div class="divider" role="separator"></div>
+
+  <!-- ── Drop Zone ── -->
+  <section aria-label="File upload area">
+    <div
+      id="drop-zone"
+      class="drop-zone"
+      role="button"
+      tabindex="0"
+      aria-label="Click or drag a file here to upload"
+    >
+      <!-- Hidden real input -->
+      <input
+        type="file"
+        id="file-input"
+        accept=".txt,.md,.py,.js,.html,.css,.json,.csv"
+        aria-label="Choose a file to convert"
+      />
+
+      <span class="drop-zone-icon" aria-hidden="true">🗂️</span>
+      <span class="drop-zone-label">
+        <span>Click to browse</span> or drag &amp; drop
+      </span>
+      <span class="drop-zone-sub">Supported: .txt .md .py .js .html .css .json .csv &mdash; max 5 MB</span>
+
+      <!-- Selected file badge -->
+      <div id="file-name-badge" class="file-name-badge" role="status" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- ── Supported Types ── -->
+  <div class="supported-types" aria-label="Supported file types">
+    <div class="supported-types-label">Supported formats</div>
+    <div class="type-chips" role="list">
+      <span class="chip chip--txt"  role="listitem">.txt</span>
+      <span class="chip chip--md"   role="listitem">.md</span>
+      <span class="chip chip--py"   role="listitem">.py</span>
+      <span class="chip chip--js"   role="listitem">.js</span>
+      <span class="chip chip--html" role="listitem">.html</span>
+      <span class="chip chip--css"  role="listitem">.css</span>
+      <span class="chip chip--json" role="listitem">.json</span>
+      <span class="chip chip--csv"  role="listitem">.csv</span>
+    </div>
+  </div>
+
+  <!-- ── Progress Bar ── -->
+  <div id="progress-bar" class="progress-bar" role="progressbar" aria-label="Conversion progress" aria-valuemin="0" aria-valuemax="100">
+    <div id="progress-fill" class="progress-fill"></div>
+  </div>
+
+  <!-- ── Convert Button ── -->
+  <button
+    id="convert-btn"
+    class="convert-btn"
+    disabled
+    aria-label="Convert file to Markdown and download"
+  >
+    <span class="btn-icon" aria-hidden="true">✨</span>
+    Convert &amp; Download .md
+  </button>
+
+  <!-- ── Status Message ── -->
+  <div id="status" class="status" role="status" aria-live="polite"></div>
+
+  <!-- ── Preview Section ── -->
+  <div id="preview-section" class="preview-section" aria-label="Markdown preview">
+    <div class="preview-header">
+      <span class="preview-title">Preview</span>
+      <span id="char-count" class="char-count"></span>
+    </div>
+    <pre id="preview-content" class="preview-content" aria-label="Converted Markdown preview"></pre>
+  </div>
+
+  <!-- ── Privacy Note ── -->
+  <div class="privacy-note" role="note">
+    <span class="privacy-icon" aria-hidden="true">🔒</span>
+    <span>Files are processed locally and never leave your device.</span>
+  </div>
+
+</div><!-- /.popup-wrapper -->
+
+<!-- ── Footer ── -->
+<footer class="footer" aria-label="Extension info">
+  <span>File2MD v1.0</span>
+  <span aria-hidden="true">&middot;</span>
+  <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="View source on GitHub">GitHub</a>
+  <span aria-hidden="true">&middot;</span>
+  <span>100% local</span>
+</footer>
+
+<!-- Scripts loaded after DOM -->
+<script src="converter.js"></script>
+<script src="download.js"></script>
+<script src="popup.js"></script>
+
+</body>
+</html>
