@@ -1,6 +1,6 @@
 <div align="center">
 
-# 📄 File2MD
+# File2MD
 
 **Convert files to Markdown — instantly, privately, right in your browser.**
 
@@ -16,28 +16,28 @@
 
 ## What is File2MD?
 
-**File2MD** is a Chrome Extension that converts common file formats into clean Markdown (`.md`) files — all inside your browser. No servers, no accounts, no internet required after installation. Drop a file, click Convert, done.
+**File2MD** is a Chrome Extension that converts common file formats into clean Markdown (`.md`) files, all inside your browser. No servers, no accounts, no internet required after installation. Drop a file, click Convert, done.
 
 It is aimed at developers, writers, and students who need a fast, private way to turn source files and documents into Markdown for wikis, README drafts, note-taking apps, or documentation pipelines.
 
 ---
 
-## ✨ Features
+##  Features
 
 | Feature | Detail |
 |---------|--------|
-| 🔒 **100% Local** | Files never leave your device. Processed via the browser's `FileReader` API |
-| ⚡ **Instant** | No network latency — conversion is synchronous and in-memory |
-| 🗂️ **Drag & Drop** | Drop a file onto the popup or click to browse |
-| 👁️ **Live Preview** | See the first 800 characters of converted Markdown before saving |
-| 📊 **File Size Info** | Displays file size in the status bar when a file is selected |
-| 📥 **One-Click Download** | Saves `filename.md` to your Downloads folder automatically |
-| ♿ **Accessible** | Full ARIA roles, `aria-live` regions, and keyboard navigation |
-| 🎨 **Dark UI** | Glassmorphism-inspired design with animated progress bar |
+|  **100% Local** | Files never leave your device. Processed via the browser's `FileReader` API |
+|  **Instant** | No network latency — conversion is synchronous and in-memory |
+|  **Drag & Drop** | Drop a file onto the popup or click to browse |
+|  **Live Preview** | See the first 800 characters of converted Markdown before saving |
+|  **File Size Info** | Displays file size in the status bar when a file is selected |
+|  **One-Click Download** | Saves `filename.md` to your Downloads folder automatically |
+|  **Accessible** | Full ARIA roles, `aria-live` regions, and keyboard navigation |
+|  **Dark UI** | Glassmorphism-inspired design with animated progress bar |
 
 ---
 
-## 📂 Supported File Types
+##  Supported File Types
 
 | Extension | Conversion Method |
 |-----------|------------------|
@@ -54,7 +54,7 @@ It is aimed at developers, writers, and students who need a fast, private way to
 
 ---
 
-## 🚀 Installation
+##  Installation
 
 ### Load Unpacked (Developer Mode)
 
@@ -69,7 +69,7 @@ It is aimed at developers, writers, and students who need a fast, private way to
 
 ---
 
-## 🖱️ Usage
+##  Usage
 
 1. Click the **File2MD** icon in your Chrome toolbar to open the popup.
 2. **Drop a file** onto the upload zone, or click **"Click to browse"** to open the file picker.
@@ -81,7 +81,7 @@ It is aimed at developers, writers, and students who need a fast, private way to
 
 ---
 
-## 🗂️ Project Structure
+##  Project Structure
 
 ```
 File2MD/
@@ -103,7 +103,7 @@ File2MD/
 
 ---
 
-## 🔧 How It Works
+##  How It Works
 
 ```
 User selects / drops a file
@@ -134,12 +134,12 @@ User selects / drops a file
           │  URL.createObjectURL(blob) → <a>.click()
           │  URL.revokeObjectURL() after 1 s
           ▼
-   📄 filename.md → saved to Downloads
+    filename.md → saved to Downloads
 ```
 
 ---
 
-## 🔒 Privacy
+##  Privacy
 
 File2MD is designed from the ground up to be **completely private**:
 
@@ -153,7 +153,7 @@ You can audit every line of code — there are no minified bundles or obfuscated
 
 ---
 
-## 🧑‍💻 Tech Stack
+##  Tech Stack
 
 | Technology | Role |
 |------------|------|
@@ -166,7 +166,7 @@ You can audit every line of code — there are no minified bundles or obfuscated
 
 ---
 
-## 🛠️ Development Notes
+##  Development Notes
 
 ### Adding a New File Format
 
@@ -184,7 +184,7 @@ You can audit every line of code — there are no minified bundles or obfuscated
 
 ---
 
-## 🗺️ Roadmap
+##  Roadmap
 
 ### Near-Term
 
@@ -209,7 +209,7 @@ You can audit every line of code — there are no minified bundles or obfuscated
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Please:
 
@@ -223,7 +223,7 @@ Contributions are welcome! Please:
 
 ---
 
-## 📄 License
+##  License
 
 [MIT License](LICENSE) — Copyright © 2026 [Rishil Chudasama](https://github.com/Godzilla0604). Free to use, modify, and distribute.
 
@@ -231,6 +231,6 @@ Contributions are welcome! Please:
 
 <div align="center">
 
-Built with 🔒 privacy-first principles · No servers · No tracking · No nonsense
+Built with  privacy-first principles · No servers · No tracking · No nonsense
 
 </div>
